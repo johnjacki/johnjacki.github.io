@@ -32,8 +32,8 @@ h1,h2,h3,h4,h5,h6{
     color:var(--color2);
 }
 h1{
-    font-size:120px;
-    line-height:120px;
+    font-size:90px;
+    line-height:90px;
     font-family:var(--font-family3);
     font-weight:400;
     display: flex;
@@ -44,8 +44,8 @@ h1{
     color:var(--color1);
 }
 h2{
-    font-size:48px;
-    line-height:56px;
+    font-size:36px;
+    line-height:42px;
     letter-spacing: 0.01em;
     font-weight:200;
     margin-bottom:32px;
@@ -253,13 +253,14 @@ header > ul > li > a:hover:after{
 }
 #countdown *{color:white;}
 #countdown .data{
-    gap:32px;
+    gap:40px;
 }
 #countdown .data > div > h2{
-    font-size:90px;
-    line-height:90px;
-    margin-bottom:16px;
+    font-size:50px;
+    line-height:50px;
+    margin-bottom:20px;
 }
+
 /* class */
 .ta-center{
     text-align:center;
@@ -299,19 +300,25 @@ header > ul > li > a:hover:after{
 .tt-uppercase{
     text-transform:uppercase;
 }
+.button-container{
+    position:relative;
+    z-index:2;
+}
 .button{
-    padding:24px 32px;
+    padding:12px 32px;
     background-color:var(--color3);
     color:white;
     transition:margin 300ms ease, background-color 300ms ease;
     text-transform: uppercase;
     position:relative;
+    font-size:14px;
 }
 .button:hover{
     margin-top:-10px;
     margin-right:-10px;
     background-color:var(--color1);
     margin-bottom:10px;
+    cursor:pointer;
 }
 .button:after{
     content:"";
@@ -323,7 +330,7 @@ header > ul > li > a:hover:after{
     background-color:var(--color4);
     z-index:-1;
     transition:left 300ms ease, bottom 300ms ease;
-    pointer-events:none;
+    opacity: 0.3;
 }
 .button:hover:after{
     left:-10px;
@@ -346,6 +353,14 @@ header > ul > li > a:hover:after{
     /* html */
     header{
         display:block;
+    }
+    h1{
+        font-size:120px;
+        line-height:120px;
+    }
+    h2{
+        font-size:48px;
+        line-height:56px;
     }
     
     /* #main-content */
@@ -382,6 +397,15 @@ header > ul > li > a:hover:after{
     #dress-code > div > div > div > .circle:after{
         width:80%;
         padding-top:80%;
+    }
+    #countdown .data > div > h2{
+        font-size:90px;
+        line-height:90px;
+    }
+
+    /* class */
+    .button{
+        padding:18px 32px;
     }
 }
 @media(min-width:1200px){
