@@ -1,0 +1,408 @@
+/* html */
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    padding:0;
+    margin:0;
+    font-family:var(--font-family1);
+    font-size:16px;
+    line-height:24px;
+    letter-spacing:0.01em;
+    color: var(--color7);
+}
+ul,li{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+hr{
+    margin-block-start: 32px;
+    margin-block-end: 32px;
+    opacity: 0.3;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    margin-bottom:8px;
+    font-weight:500;
+    color:var(--color2);
+}
+h1{
+    font-size:120px;
+    line-height:120px;
+    font-family:var(--font-family3);
+    font-weight:400;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+    margin: auto;
+    color:var(--color1);
+}
+h2{
+    font-size:48px;
+    line-height:56px;
+    letter-spacing: 0.01em;
+    font-weight:200;
+    margin-bottom:32px;
+}
+h3{
+    font-size:30px;
+    font-weight:200;
+    line-height:32px;
+}
+h4{
+    font-size:24px;
+    line-height:32px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+h5{
+    font-size:16px;
+    line-height:28px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+h6{
+    font-size:15px;
+    line-height:20px;
+    text-transform: uppercase;
+    font-weight:500;
+    margin-bottom:16px;
+    color:var(--color1);
+}
+
+/* header */
+header{
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+}
+header > ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:32px;
+    padding-top:16px;
+    padding-bottom:16px;
+}
+header > ul > li > a{
+    display: block;
+    font-size:12px;
+    line-height:16px;
+    text-transform: uppercase;
+    letter-spacing:0.03em;
+    color:var(--color3);
+    font-weight:500;
+    padding-bottom:3px;
+    position:relative;
+    overflow:hidden;
+    transition:all 300ms ease;
+}
+header > ul > li > a:after{
+    content:"";
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:-100%;
+    height:1px;
+    background-color:var(--color1);
+    transition:all 300ms ease;
+}
+header > ul > li > a:hover{
+    color: var(--color1);
+}
+header > ul > li > a:hover:after{
+    left:0;
+}
+
+/* #main-content */
+.container > div{
+    padding:60px 24px;
+    width:calc(100% - 48px);
+}
+.container.full-height{
+    min-height:400px;
+    height:80vh;
+    background-size:cover;
+    background-position:center;
+}
+#rsvp-cta > div > h2{
+    max-width:650px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#wedding-details{background-color:var(--color5);}
+/* #dress-code{background-color:var(--color5);} */
+/* #wedding-details *, */
+/* #dress-code *{color:var(--color6);} */
+#wedding-details > div > div,
+#dress-code > div > div{
+    width:100%;
+}
+#wedding-details > div > div:not(.container),
+#dress-code > div > div:not(.container){
+    min-height:400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#wedding-details > div p > a,
+#dress-code > div p > a{
+    clear:both;
+    display: inline-block;
+    font-size:90%;
+    opacity: 0.5;
+    padding-bottom:4px;
+    transition:all 300ms ease;
+    border-bottom:1px solid transparent;
+}
+#wedding-details > div p > a:hover,
+#dress-code > div p > a:hover{
+    opacity: 1;
+    border-color:var(--color1);
+}
+#dress-code > div > div:first-child > div{
+    display:flex;
+    flex:nowrap;
+    align-items:center;
+    padding:60px 24px 30px 24px;
+    width:calc(100% - 48px);
+}
+#dress-code > div > div > div > p{
+    max-width:450px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#dress-code > div > div > div > .circle{
+    position:relative;
+    width:100%;
+}
+#dress-code > div > div > div > .circle:before{
+    content:"";
+    position:absolute;
+    top:0;
+    width:70%;
+    left:0;
+    right:0;
+    bottom:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    text-transform:uppercase;
+    color:white;
+    transition:all 300ms ease;
+    font-size:90%;
+}
+#dress-code > div > div > div > .circle:nth-child(1):before{
+    content:"Silver Foil";
+}
+#dress-code > div > div > div > .circle:nth-child(2):before{
+    content:"Shadow Blue";
+}
+#dress-code > div > div > div > .circle:nth-child(3):before{
+    content:"Cadet Grey";
+}
+#dress-code > div > div > div > .circle:nth-child(4):before{
+    content:"Dark Vanilla";
+}
+#dress-code > div > div > div > .circle:after{
+    content:"";
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width:90%;
+    padding-top:90%;
+    border-radius:50%;
+    overflow:hidden;
+    margin:auto;
+    border-bottom-right-radius: 0;
+}
+#dress-code > div > div > div > .circle:nth-child(1):after{
+    background-color:#b0aeb2;
+}
+#dress-code > div > div > div > .circle:nth-child(2):after{
+    background-color:#7a8ba5;
+}
+#dress-code > div > div > div > .circle:nth-child(3):after{
+    background-color:#94a4b1;
+}
+#dress-code > div > div > div > .circle:nth-child(4):after{
+    background-color:#c9bbae;
+}
+#our-story{background-color:var(--color1);}
+#our-story *{color:white;}
+#our-story > div{
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#our-story .grid > .grid-item{
+    width:calc(50% - 7px);
+}
+#our-story > div > p{
+    max-width:380px;
+    margin:auto;
+}
+#countdown *{color:white;}
+#countdown .data{
+    gap:32px;
+}
+#countdown .data > div > h2{
+    font-size:90px;
+    line-height:90px;
+    margin-bottom:16px;
+}
+/* class */
+.ta-center{
+    text-align:center;
+}
+.d-block{
+    display: block;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.d-flex{
+    display: flex;
+}
+.d-flex-center{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.style-table{
+    height:80px;
+    margin-bottom:24px;
+}
+.style-table > *{
+    flex-grow: 1;
+    flex-basis: 0;
+    height:100%;
+    border-top: 1px solid var(--color4);
+    border-bottom: 1px solid var(--color4);
+    border-right: 1px solid var(--color4);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.style-table > *:nth-child(3){
+   border-right:0;
+}
+.tt-uppercase{
+    text-transform:uppercase;
+}
+.button{
+    padding:24px 32px;
+    background-color:var(--color3);
+    color:white;
+    transition:margin 300ms ease, background-color 300ms ease;
+    text-transform: uppercase;
+    position:relative;
+}
+.button:hover{
+    margin-top:-10px;
+    margin-right:-10px;
+    background-color:var(--color1);
+    margin-bottom:10px;
+}
+.button:after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    bottom:0;
+    left:0;
+    background-color:var(--color4);
+    z-index:-1;
+    transition:left 300ms ease, bottom 300ms ease;
+    pointer-events:none;
+}
+.button:hover:after{
+    left:-10px;
+    bottom:-10px;
+}
+.mb-24{margin-bottom:24px;}
+.mb-32{margin-bottom:32px;}
+.mb-40{margin-bottom:40px;}
+
+/* @media */
+@media(min-width:768px){
+    /* html */
+
+    /* #main-content */
+    .container.full-height{
+        height:100vh;
+    }
+}
+@media(min-width:1025px){
+    /* html */
+    header{
+        display:block;
+    }
+    
+    /* #main-content */
+    .container > div{
+        padding:90px 40px;
+        width:calc(100% - 80px);
+    }
+    #rsvp-cta > div{
+        max-width:750px;
+    }
+    #wedding-details .container > div,
+    #dress-code .container > div{
+        padding-top:120px;
+        padding-bottom:120px;
+    }
+    #wedding-details > div,
+    #dress-code > div{
+        display:flex;
+    }
+    #dress-code > div{
+        align-items: center;
+    }
+    #dress-code > div > div:first-child > div{
+        row-gap:40px;
+        flex-wrap:wrap;
+        padding:60px 40px;
+    }
+    #dress-code > div > div:first-child > div > div{
+        flex:0 0 50%;
+    }
+    #dress-code > div > div > div > .circle:not(:hover):before{
+        color:transparent;
+    }
+    #dress-code > div > div > div > .circle:after{
+        width:80%;
+        padding-top:80%;
+    }
+}
+@media(min-width:1200px){
+    /* html */
+    h1{
+        font-size:160px;
+        line-height:160px;
+        margin-top:80px;
+    }
+    
+    /* #main-content */
+    .container > div{
+        padding-left:0;
+        padding-right:0;
+        width:88%;
+        margin:auto;
+    }
+}
+@media(max-width:767px){
+    /* class */
+    .d-mobile-none{
+        display: none;
+    }
+}
