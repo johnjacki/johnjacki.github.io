@@ -121,6 +121,9 @@ header > ul > li > a:hover{
 header > ul > li > a:hover:after{
     left:0;
 }
+header.sticky{
+    position:fixed;
+}
 
 /* #main-content */
 .container > div{
@@ -139,9 +142,6 @@ header > ul > li > a:hover:after{
     margin-right:auto;
 }
 #wedding-details{background-color:var(--color5);}
-/* #dress-code{background-color:var(--color5);} */
-/* #wedding-details *, */
-/* #dress-code *{color:var(--color6);} */
 #wedding-details > div > div,
 #dress-code > div > div{
     width:100%;
@@ -299,9 +299,16 @@ header > ul > li > a:hover:after{
     outline:none;
     padding:4px 8px;
     -webkit-appearance: textfield;
+    font-family:var(--font-family1);
 }
 #rsvp form input[type="text"]:focus,#rsvp form input[type="email"]:focus,textarea:focus{
     border-color:var(--color2);
+}
+
+/* footer */
+footer{
+    padding:16px;
+    background-color:var(--color5);
 }
 
 /* class */
@@ -358,7 +365,7 @@ header > ul > li > a:hover:after{
     border:0;
     min-width:200px;
 }
-.button:hover{
+.button:not(:disabled):hover{
     margin-top:-10px;
     margin-right:-10px;
     background-color:var(--color1);
@@ -377,13 +384,27 @@ header > ul > li > a:hover:after{
     transition:left 300ms ease, bottom 300ms ease;
     opacity: 0.3;
 }
-.button:hover:after{
+.button:not(:disabled):hover:after{
     left:-10px;
     bottom:-10px;
 }
 .mb-24{margin-bottom:24px;}
 .mb-32{margin-bottom:32px;}
 .mb-40{margin-bottom:40px;}
+.mb-none{margin-bottom:0!important;}
+.alert{
+    font-size:14px;
+    font-weight:600;
+    padding:16px;
+}
+.alert-success{
+    color:var(--color9);
+    background-color:var(--color8);
+}
+.alert-danger{
+    color:var(--color11);
+    background-color:var(--color10);
+}
 
 /* @media */
 @media(min-width:768px){
