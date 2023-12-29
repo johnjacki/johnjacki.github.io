@@ -239,10 +239,18 @@ header.sticky{
 #dress-code > div > div > div > .circle:nth-child(4):after{
     background-color:#c9bbae;
 }
+#entourage > div{
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#entourage > div{
+    padding-bottom:0;
+}
 #our-story{background-color:var(--color1);}
 #our-story *{color:white;}
 #our-story > div{
-    max-width:800px;
+    max-width:900px;
     margin-left:auto;
     margin-right:auto;
 }
@@ -407,6 +415,13 @@ footer{
     color:var(--color11);
     background-color:var(--color10);
 }
+.col{
+    display:flex;
+    flex-direction:column;
+}
+.col>*{
+    width:100%;
+}
 
 /* @media */
 @media(min-width:768px){
@@ -481,6 +496,9 @@ footer{
     /* class */
     .button{
         padding:18px 32px;
+    }
+    .col{
+        flex-direction:row;
     }
 }
 @media(min-width:1200px){
