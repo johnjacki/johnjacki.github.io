@@ -38,7 +38,7 @@
                 function(response, textStatus, jqXHR){
                     $('#rsvp form button[type="submit"]').prop('disabled',false);
                     $('#rsvp form button[type="submit"]').html('Send');
-                    
+
                     if(response.success){
                         $('#rsvp form').prepend("<p class='alert alert-success'>Thank you for sending your response</p>")
                     }else{
@@ -53,4 +53,20 @@
             console.log(e);
         }
     });
+
+    // FIXED HEADER
+    $(window).on('scroll',function(){
+        var wintop = $(this).scrollTop();
+        var stickyoffset = $('#hero').offset().top + $('#hero').innerHeight();
+        if(wintop > stickyoffset){
+            if(!$('header').hasClass('sticky')){
+                $('header').addClass('sticky');
+            }
+        }else{
+            if($('header').hasClass('sticky')){
+                $('header').removeClass('sticky');
+            }
+        }
+    });
+
 })(jQuery);

@@ -123,6 +123,8 @@ header > ul > li > a:hover:after{
 }
 header.sticky{
     position:fixed;
+    background-color:var(--color5);
+    z-index:99999;
 }
 
 /* #main-content */
