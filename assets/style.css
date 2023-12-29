@@ -311,6 +311,11 @@ header.sticky{
 #rsvp form input[type="text"]:focus,#rsvp form input[type="email"]:focus,textarea:focus{
     border-color:var(--color2);
 }
+#rsvp > div > p:last-child{
+    max-width:550px;
+    margin-left:auto;
+    margin-right:auto;
+}
 
 /* footer */
 footer{
@@ -321,6 +326,9 @@ footer{
 /* class */
 .ta-center{
     text-align:center;
+}
+.d-none{
+    display: none!important;
 }
 .d-block{
     display: block;
