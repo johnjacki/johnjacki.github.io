@@ -1,4 +1,22 @@
 (function($){
+
+    $(document).ready(function(){
+        var params = new URLSearchParams(window.location.search);
+        if(params.has('code')){
+            var code = params.get('code');
+            if(code == '13579'){
+                var seats_str = $('#rsvp .seats').html();
+                seats_str = seats_str.replace('[seat_no]','1');
+                $('#rsvp .seats').html(seats_str);
+                $('#rsvp .seats').removeClass('d-none');
+            }else if(code == '02468'){
+                var seats_str = $('#rsvp .seats').html();
+                seats_str = seats_str.replace('[seat_no]','2');
+                $('#rsvp .seats').html(seats_str);
+                $('#rsvp .seats').removeClass('d-none');
+            }
+        }
+    });
     
     // COUNTDOWN
     $('#countdown').countdown('2024/02/08 15:30:00').on('update.countdown', function(event) {
