@@ -244,17 +244,17 @@ header.sticky{
     margin-left:auto;
     margin-right:auto;
 }
-#our-prenup{background-color:var(--color1);}
-#our-prenup *{color:white;}
-#our-prenup > div{
+#our-story{background-color:var(--color1);}
+#our-story *{color:white;}
+#our-story > div{
     max-width:900px;
     margin-left:auto;
     margin-right:auto;
 }
-#our-prenup .grid > .grid-item{
+#our-story .grid > .grid-item{
     width:calc(50% - 7px);
 }
-#our-prenup > div > p{
+#our-story > div > p{
     max-width:380px;
     margin:auto;
 }

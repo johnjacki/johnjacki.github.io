@@ -16,6 +16,9 @@
                 $('#rsvp .seats').removeClass('d-none');
             }
         }
+        lightbox.option({
+            'positionFromTop': 61,
+        })
     });
     
     // COUNTDOWN
