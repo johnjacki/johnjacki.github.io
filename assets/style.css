@@ -373,18 +373,20 @@ footer{
     padding:12px 32px;
     background-color:var(--color3);
     color:white;
-    transition:margin 300ms ease, background-color 300ms ease;
+    transition:margin 300ms ease, background-color 300ms ease,top 300ms ease,right 300ms ease;
     text-transform: uppercase;
     position:relative;
     font-size:14px;
     border:0;
     min-width:200px;
+    top:0;
+    right:0;
 }
 .button:not(:disabled):hover{
-    margin-top:-10px;
-    margin-right:-10px;
+    position: relative;
+    top: -5px;
+    right: -5px;
     background-color:var(--color1);
-    margin-bottom:10px;
     cursor:pointer;
 }
 .button:after{
