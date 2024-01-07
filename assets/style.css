@@ -204,16 +204,16 @@ header.sticky{
     font-size:90%;
 }
 #dress-code > div > div > div > .circle:nth-child(1):before{
-    content:"Silver Foil";
+    content:"Steel Blue";
 }
 #dress-code > div > div > div > .circle:nth-child(2):before{
-    content:"Shadow Blue";
+    content:"French Blue";
 }
 #dress-code > div > div > div > .circle:nth-child(3):before{
-    content:"Cadet Grey";
+    content:"Pale Silver";
 }
 #dress-code > div > div > div > .circle:nth-child(4):before{
-    content:"Dark Vanilla";
+    content:"Coffee";
 }
 #dress-code > div > div > div > .circle:after{
     content:"";
@@ -228,16 +228,16 @@ header.sticky{
     border-bottom-right-radius: 0;
 }
 #dress-code > div > div > div > .circle:nth-child(1):after{
-    background-color:#b0aeb2;
+    background-color:#4c596a;
 }
 #dress-code > div > div > div > .circle:nth-child(2):after{
-    background-color:#7a8ba5;
+    background-color:#a5b7c1;
 }
 #dress-code > div > div > div > .circle:nth-child(3):after{
-    background-color:#94a4b1;
+    background-color:#cec5bc;
 }
 #dress-code > div > div > div > .circle:nth-child(4):after{
-    background-color:#c9bbae;
+    background-color:#e7dfd2;
 }
 #entourage > div{
     max-width:800px;
@@ -485,6 +485,8 @@ footer{
         flex-wrap:wrap;
         padding:60px 40px;
         max-width:800px;
+        margin-left:auto;
+        margin-right:auto;
     }
     #dress-code > div > div:first-child > div > div{
         flex:0 0 50%;
