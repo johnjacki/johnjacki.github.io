@@ -9,11 +9,13 @@
                 seats_str = seats_str.replace('[seat_no]','1');
                 $('#rsvp .seats').html(seats_str);
                 $('#rsvp .seats').removeClass('d-none');
+                $('#rsvp form #rsvp').val(1);
             }else if(code == '02468'){
                 var seats_str = $('#rsvp .seats').html();
                 seats_str = seats_str.replace('[seat_no]','2');
                 $('#rsvp .seats').html(seats_str);
                 $('#rsvp .seats').removeClass('d-none');
+                $('#rsvp form #rsvp').val(2);
             }
         }
         lightbox.option({
@@ -55,6 +57,7 @@
                     'Contact Number':$('#rsvp form input[name="phone"]').val(),
                     'Will you be able to attend our wedding?':$('#rsvp form input[name="going"]:checked').val(),
                     'Message to the Bride & Groom':$('#rsvp form #message').val(),
+                    'RSVP':$('#rsvp form #rsvp').val(),
                 }},
                 function(response, textStatus, jqXHR){
                     $('#rsvp form button[type="submit"]').prop('disabled',false);
