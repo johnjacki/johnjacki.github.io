@@ -430,6 +430,9 @@ footer{
 .col>*{
     width:100%;
 }
+.mw-100{
+    max-width:100%;
+}
 
 /* @media */
 @media(min-width:768px){
