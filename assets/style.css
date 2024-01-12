@@ -134,8 +134,7 @@ header.sticky{
     width:calc(100% - 48px);
 }
 .container.full-height{
-    min-height:400px;
-    height:80vh;
+    height: 700px;
     background-size:cover;
     background-position:center;
 }
@@ -437,6 +436,14 @@ footer{
 /* @media */
 @media(min-width:768px){
     /* html */
+    h1{
+        font-size:120px;
+        line-height:120px;
+    }
+    h2{
+        font-size:48px;
+        line-height:56px;
+    }
 
     /* #main-content */
     .container.full-height{
@@ -457,14 +464,6 @@ footer{
     /* html */
     header{
         display:block;
-    }
-    h1{
-        font-size:120px;
-        line-height:120px;
-    }
-    h2{
-        font-size:48px;
-        line-height:56px;
     }
     
     /* #main-content */
