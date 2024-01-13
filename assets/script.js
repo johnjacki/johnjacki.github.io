@@ -68,6 +68,13 @@
                     }else{
                         $('#rsvp form').prepend('<div class="alert"><div><h2>Error</h2><p>We are unable to submit your response, please reachout to Jacki or John</p></div></div>');
                     }
+
+                    // reset form fields
+                    $('#rsvp form input[type="text"]').val('');
+                    $('#rsvp form input[type="email"]').val('');
+                    $('#rsvp form textarea').val('');
+                    $('#rsvp form input:checked').prop('checked',false);
+
                     setInterval(function(){
                         $('#rsvp form .alert').remove();
                     },25000);
