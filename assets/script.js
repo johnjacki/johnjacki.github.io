@@ -64,18 +64,21 @@
                     $('#rsvp form button[type="submit"]').html('Send');
 
                     if(response.success){
-                        $('#rsvp form').prepend("<p class='alert alert-success'>Thank you for sending your response</p>")
+                        $('#rsvp form').prepend('<div class="alert"><div><h2>Thank You</h2><p>Appreciate your prompt response! It wouldn\'t be the same without you. See you there!</p></div></div>');
                     }else{
-                        $('#rsvp form').prepend("<p class='alert alert-danger'>We are unable to reserve your seat, please contact John or Jacki</p>")
+                        $('#rsvp form').prepend('<div class="alert"><div><h2>Error</h2><p>We are unable to submit your response, please reachout to Jacki or John</p></div></div>');
                     }
                     setInterval(function(){
                         $('#rsvp form .alert').remove();
-                    },10000);
+                    },25000);
                 }, 'json'
             );
         }catch(e){
             console.log(e);
         }
+    });
+    $(document).on('click','#rsvp form .alert',function(e){
+        $(this).remove();
     });
 
     // FIXED HEADER

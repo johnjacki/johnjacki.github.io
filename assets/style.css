@@ -125,7 +125,7 @@ header > ul > li > a:hover:after{
 header.sticky{
     position:fixed;
     background-color:var(--color5);
-    z-index:99999;
+    z-index:99;
 }
 
 /* #main-content */
@@ -410,15 +410,36 @@ footer{
 .mb-32{margin-bottom:32px;}
 .mb-40{margin-bottom:40px;}
 .mb-none{margin-bottom:0!important;}
-.alert{
+.alert > div{
+    position:fixed;
     font-size:14px;
-    font-weight:600;
-    padding:16px;
+    padding:24px 32px;
+    width:70%!important;
+    max-width:350px;
+    margin:auto;
+    display: block;
+    top:40px;
+    left:0;
+    right:0;
+    background-color:white;
+    z-index:9999;
+    text-align:center;
 }
-.alert-success{
+.alert:before{
+    content:"";
+    display: block;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.4);
+    z-index:998;
+}
+/* .alert-success{
     color:var(--color9);
     background-color:var(--color8);
-}
+} */
 .alert-danger{
     color:var(--color11);
     background-color:var(--color10);
@@ -459,6 +480,10 @@ footer{
     #rsvp form > .flex-input > *{
         flex-basis:0;
         flex-grow:1;
+    }
+    .alert > div{
+        top:90px;
+        padding:60px 80px;
     }
 }
 @media(min-width:1025px){
