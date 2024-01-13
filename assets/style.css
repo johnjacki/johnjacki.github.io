@@ -132,6 +132,7 @@ header.sticky{
 .container > div{
     padding:60px 24px;
     width:calc(100% - 48px);
+    margin: auto;
 }
 .container.full-height{
     height: 700px;
