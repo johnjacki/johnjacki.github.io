@@ -18,9 +18,8 @@
                 $('#rsvp form #rsvp').val(2);
             }
         }
-        lightbox.option({
-            'positionFromTop': 61,
-        })
+        new SimpleLightbox('.grid a', { /* options */ });
+
     });
     
     // COUNTDOWN
