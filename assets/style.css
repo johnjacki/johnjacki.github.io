@@ -259,7 +259,7 @@ header.sticky{
     max-width:380px;
     margin:auto;
 }
-#countdown *{color:white;}
+/* #countdown *{color:white;} */
 #countdown .data{
     gap:40px;
 }
