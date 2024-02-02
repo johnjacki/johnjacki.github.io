@@ -267,7 +267,7 @@ header.sticky{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: start;
+    align-items: end;
     background-position: top!important;
 }
 #countdown > div{
