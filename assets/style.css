@@ -267,20 +267,21 @@ header.sticky{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: center;
+    align-items: start;
     background-position: top!important;
 }
 #countdown > div{
     margin:0;
     width:100%;
-    padding:24px 0;
+    padding:16px 0;
     overflow: hidden;
-    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,1);
 }
 #countdown .data > div > h2{
     font-size:50px;
     line-height:50px;
     margin-bottom:20px;
+    font-weight:700;
 }
 #rsvp > div{
     max-width:800px;
@@ -471,11 +472,14 @@ footer{
 
 /* @media */
 @media(max-width:1024px){
-    footer{
-        margin-top: 150px;
+    #countdown > div h2,
+    #countdown > div h6{
+        margin-top:0px;
+        margin-bottom:8px!important;
     }
-    #countdown > div{
-        margin-bottom: -150px;
+    #countdown > div p{
+        margin:0;
+        line-height: 16px;
     }
 }
 @media(min-width:768px){
@@ -552,15 +556,18 @@ footer{
         width:80%;
         padding-top:80%;
     }
+    
     #countdown > div{
         width:auto;
-        padding: 40px 100px;
+        padding: 24px 80px;
         margin-bottom: 40px;
         border-radius: 30px;
+        margin:40px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
     }
     #countdown .data > div > h2{
-        font-size:90px;
-        line-height:90px;
+        font-size:70px;
+        line-height:70px;
     }
     
 
