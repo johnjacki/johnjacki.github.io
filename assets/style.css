@@ -135,7 +135,7 @@ header.sticky{
     margin: auto;
 }
 .container.full-height{
-    height: 700px;
+    height: 100vh;
     background-size:cover;
     background-position:center;
 }
