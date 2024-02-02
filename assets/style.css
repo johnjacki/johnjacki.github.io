@@ -263,6 +263,20 @@ header.sticky{
 #countdown .data{
     gap:40px;
 }
+#countdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-position: top!important;
+}
+#countdown > div{
+    margin:0;
+    width:100%;
+    padding:24px 0;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+}
 #countdown .data > div > h2{
     font-size:50px;
     line-height:50px;
@@ -456,6 +470,14 @@ footer{
 }
 
 /* @media */
+@media(max-width:1024px){
+    footer{
+        margin-top: 150px;
+    }
+    #countdown > div{
+        margin-bottom: -150px;
+    }
+}
 @media(min-width:768px){
     /* html */
     h1{
@@ -530,10 +552,17 @@ footer{
         width:80%;
         padding-top:80%;
     }
+    #countdown > div{
+        width:auto;
+        padding: 40px 100px;
+        margin-bottom: 40px;
+        border-radius: 30px;
+    }
     #countdown .data > div > h2{
         font-size:90px;
         line-height:90px;
     }
+    
 
     /* class */
     .button{
