@@ -90,7 +90,7 @@
     // FIXED HEADER
     $(window).on('scroll',function(){
         var wintop = $(this).scrollTop();
-        var stickyoffset = $('#hero').offset().top + $('#hero').innerHeight();
+        var stickyoffset = $('#countdown').offset().top + $('#countdown').innerHeight();
         if(wintop > stickyoffset){
             if(!$('header').hasClass('sticky')){
                 $('header').addClass('sticky');
